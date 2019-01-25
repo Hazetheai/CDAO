@@ -46,3 +46,10 @@ Thumbs.db
 *.png
 *.svg
 *.ico
+
+# Video #
+##########
+
+*.mp4
+*.webm
+
