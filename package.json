@@ -1,0 +1,22 @@
+{
+  "name": "cdao",
+  "version": "1.0.0",
+  "description": "Council for the Dark Arts Orchestra",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hazetheai/CDAO.git"
+  },
+  "author": "Jake Riordan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hazetheai/CDAO/issues"
+  },
+  "homepage": "https://github.com/Hazetheai/CDAO#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
