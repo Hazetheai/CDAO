@@ -60,7 +60,7 @@ body {
   padding: 3rem; }
 
 .heading-primary {
-  color: #fff;
+  color: azure;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 60px; }
@@ -82,15 +82,15 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  background-image: linear-gradient(to right, #FB0D1C, #4d0909);
   display: inline-block;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   letter-spacing: .2rem;
-  transition: all .2s; }
+  transition: all .3s; }
   .heading-secondary:hover {
-    transform: skewY(3deg) skewX(15deg) scale(1.1);
+    transform: skewY(0.5deg) skewX(3deg) scale(1.05);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .heading-tertiary {
@@ -125,10 +125,10 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .btn--white {
-  background-color: #fff;
+  background-color: azure;
   color: #777; }
   .btn--white::after {
-    background-color: #fff; }
+    background-color: azure; }
 
 .btn::after {
   content: "";
@@ -148,16 +148,16 @@ body {
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
-  color: #55c57a;
+  color: #861B1B;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #55c57a;
+  border-bottom: 1px solid #861B1B;
   padding: 3px;
   transition: all .2s; }
 
 .btn-text:hover {
-  background-color: #55c57a;
-  color: #fff;
+  background-color: #861B1B;
+  color: azure;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
 
@@ -168,7 +168,7 @@ body {
 .composition {
   position: relative; }
   .composition__photo {
-    width: 55%;
+    max-width: 55%;
     box-shadow: 0 1.5em 4rem rgba(0, 0, 0, 0.15);
     border-radius: 2px;
     position: absolute;
@@ -177,7 +177,8 @@ body {
     outline-offset: 2rem; }
     .composition__photo--p1 {
       left: 0;
-      top: -2rem; }
+      top: -2rem;
+      max-width: 24.7rem; }
     .composition__photo--p2 {
       right: 0;
       top: 2rem; }
@@ -185,7 +186,7 @@ body {
       left: 20%;
       top: 10rem; }
     .composition__photo:hover {
-      outline: 1.5rem solid #55c57a;
+      outline: 1.5rem solid #861B1B;
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20; }
@@ -193,7 +194,7 @@ body {
     transform: scale(0.95); }
 
 .feature-box {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(240, 255, 255, 0.8);
   font-size: 1.5rem;
   padding: 2.5rem;
   text-align: center;
@@ -204,7 +205,7 @@ body {
     font-size: 6rem;
     margin-bottom: .5rem;
     display: inline-block;
-    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    background-image: linear-gradient(to right, #FB0D1C, #4d0909);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent; }
@@ -229,9 +230,9 @@ body {
     border-radius: .3rem;
     box-shadow: 0 1.5em 4rem rgba(0, 0, 0, 0.15); }
     .card__side--front {
-      background-color: #fff; }
+      background-color: azure; }
     .card__side--back {
-      background-color: #fff;
+      background-color: azure;
       transform: rotateY(180deg); }
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
@@ -242,7 +243,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(251, 13, 28, 0.4), rgba(77, 9, 9, 0.5)), url(../../img/CDAOCover2.png);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -293,7 +294,7 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
+  background-image: linear-gradient(to right bottom, rgba(251, 13, 28, 0.4), rgba(77, 9, 9, 0.5)), url(../../img/Drums_in_red.jpg);
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem; }

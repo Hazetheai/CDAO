@@ -46,10 +46,10 @@ body {
     background-clip: text;
     color: transparent;
     letter-spacing: .2rem;
-    transition: all .2s;
+    transition: all .3s;
 
     &:hover {
-        transform: skewY(3deg) skewX(15deg) scale(1.1);
+        transform: skewY(.5deg) skewX(3deg) scale(1.05);
         text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
     }
 }
