@@ -88,7 +88,7 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  background-image: linear-gradient(to right, #FB0D1C, #4d0909);
+  background-image: linear-gradient(to right, #fb6464, #540000);
   display: inline-block;
   -webkit-background-clip: text;
   background-clip: text;
@@ -214,7 +214,7 @@ body {
     font-size: 6rem;
     margin-bottom: .5rem;
     display: inline-block;
-    background-image: linear-gradient(to right, #FB0D1C, #4d0909);
+    background-image: linear-gradient(to right, #fb6464, #540000);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent; }
@@ -242,11 +242,11 @@ body {
       background-color: azure;
       transform: rotateY(180deg); }
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+        background-image: linear-gradient(to right bottom, #fba964, #542600); }
       .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #FB0D1C, #4d0909); }
+        background-image: linear-gradient(to right bottom, #fb6464, #540000); }
       .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, #2998ff, #564356); }
+        background-image: linear-gradient(to right bottom, #ca5195, #440026); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -262,11 +262,11 @@ body {
     border-bottom-left-radius: .3rem;
     border-bottom-left-radius: .3rem; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg); }
+      background-image: linear-gradient(to right bottom, #fba964, #542600), url(../img/nat-5.jpg); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #FB0D1C, #4d0909), url(../img/nat-6.jpg); }
+      background-image: linear-gradient(to right bottom, #fb6464, #540000), url(../img/nat-6.jpg); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #2998ff, #564356), url(../img/nat-7.jpg); }
+      background-image: linear-gradient(to right bottom, #ca5195, #440026), url(../img/nat-7.jpg); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -282,11 +282,11 @@ body {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(251, 169, 100, 0.85), rgba(84, 38, 0, 0.85)); }
     .card__heading-span--2 {
-      background-image: linear-gradient(to right bottom, rgba(251, 13, 28, 0.85), rgba(77, 9, 9, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(251, 100, 100, 0.85), rgba(84, 0, 0, 0.85)); }
     .card__heading-span--3 {
-      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 86, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(202, 81, 149, 0.85), rgba(68, 0, 38, 0.85)); }
   .card__details {
     padding: 3rem; }
     .card__details ul {
@@ -396,7 +396,7 @@ body {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
     border-bottom: 3px solid #861B1B; }
   .form__input:focus:invalid {
-    border-bottom: 3px solid #ff7730; }
+    border-bottom: 3px solid #542600; }
   .form__input::-webkit-input-placeholder {
     color: #999; }
 
@@ -496,9 +496,79 @@ body {
     float: right;
     text-align: center; }
 
+.popup {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  background-size: cover;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s; }
+  .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    background-color: azure;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: .3rem;
+    display: table;
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all .5s .2s; }
+  .popup__left {
+    width: 33.33333%;
+    display: table-cell; }
+  .popup__right {
+    width: 66.66667%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem; }
+  .popup__img {
+    display: block;
+    width: 100%; }
+  .popup:target {
+    opacity: 1;
+    visibility: visible; }
+  .popup:target .popup__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
+  .popup__close:link, .popup__close:visited {
+    color: #777;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    font-size: 3rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .2s;
+    line-height: .48; }
+  .popup__close:hover {
+    color: #861B1B;
+    border-color: #861B1B; }
+  .popup__text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+    -moz-column-count: 2;
+    -moz-column-gap: 4rem;
+    -moz-column-rule: 1px solid #eee;
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid #eee;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto; }
+
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(251, 13, 28, 0.4), rgba(77, 9, 9, 0.5)), url(../../img/CDAOCover2.png);
+  background-image: linear-gradient(to right bottom, rgba(251, 100, 100, 0.4), rgba(84, 0, 0, 0.5)), url(../../img/CDAOCover2.png);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -565,7 +635,7 @@ body {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(#FB0D1C, #4d0909);
+  background-image: radial-gradient(#fb6464, #540000);
   z-index: 10;
   transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.175); }
 
@@ -578,7 +648,7 @@ body {
   z-index: 15;
   opacity: 0;
   width: 0;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.175); }
 
 .navigation__list {
   position: absolute;
@@ -662,7 +732,7 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(251, 13, 28, 0.4), rgba(77, 9, 9, 0.5)), url(../../img/Drums_in_red.jpg);
+  background-image: linear-gradient(to right bottom, rgba(251, 100, 100, 0.4), rgba(84, 0, 0, 0.5)), url(../../img/Drums_in_red.jpg);
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem; }
