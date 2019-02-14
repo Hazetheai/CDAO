@@ -45,12 +45,12 @@ Thumbs.db
 # *.jpg
 *.gif
 # *.png
-*.svg
+# *.svg
 *.ico
 
 # Video #
 ##########
 
-*.mp4
+# *.mp4
 *.webm
 
