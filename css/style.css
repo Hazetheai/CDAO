@@ -939,17 +939,17 @@ body {
       padding: 10rem 0; } }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(240, 255, 255, 0.9) 0%, rgba(240, 255, 255, 0.9) 50%, transparent 50%), url(/img/Event.jpg);
+  background-image: linear-gradient(105deg, rgba(240, 255, 255, 0.9) 0%, rgba(240, 255, 255, 0.9) 50%, transparent 50%), url(img/Event.jpg);
   background-position-y: center;
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5 4rem rgba(0, 0, 0, 0.2); }
   @media (max-width: 75em) {
     .book {
-      background-image: linear-gradient(105deg, rgba(240, 255, 255, 0.9) 0%, rgba(240, 255, 255, 0.9) 65%, transparent 65%), url(/img/nat-10.jpg); } }
+      background-image: linear-gradient(105deg, rgba(240, 255, 255, 0.9) 0%, rgba(240, 255, 255, 0.9) 65%, transparent 65%), url(img/Event.jpg); } }
   @media (max-width: 75em) {
     .book {
-      background-image: linear-gradient(to right, rgba(240, 255, 255, 0.9) 0%, rgba(240, 255, 255, 0.9) 100%), url(/img/nat-10.jpg); } }
+      background-image: linear-gradient(to right, rgba(240, 255, 255, 0.9) 0%, rgba(240, 255, 255, 0.9) 100%), url(img/Event.jpg); } }
   .book__form {
     width: 50%;
     padding: 6rem; }

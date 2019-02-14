@@ -67,7 +67,7 @@
       rgba($color-white, 0.9) 50%,
       transparent 50%
     ),
-    url(/img/Event.jpg);
+    url(img/Event.jpg);
   background-position-y: center;
   background-size: cover;
   border-radius: 3px;
@@ -80,7 +80,7 @@
         rgba($color-white, 0.9) 65%,
         transparent 65%
       ),
-      url(/img/nat-10.jpg);
+      url(img/Event.jpg);
   }
 
   @include respond(tab-land) {
@@ -89,7 +89,7 @@
         rgba($color-white, 0.9) 0%,
         rgba($color-white, 0.9) 100%
       ),
-      url(/img/nat-10.jpg);
+      url(img/Event.jpg);
   }
 
   &__form {
