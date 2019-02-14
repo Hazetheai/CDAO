@@ -41,10 +41,10 @@ Thumbs.db
 
 # Images #
 ##########
-*.jpeg
-*.jpg
+# *.jpeg
+# *.jpg
 *.gif
-*.png
+# *.png
 *.svg
 *.ico
 
