@@ -724,7 +724,7 @@ body {
 
 .header {
   height: 85vh;
-  background-image: linear-gradient(to right bottom, rgba(251, 100, 100, 0.4), rgba(84, 0, 0, 0.5)), url(/img/CDAOCover2.png);
+  background-image: linear-gradient(to right bottom, rgba(251, 100, 100, 0.4), rgba(84, 0, 0, 0.5)), url(../img/CDAOCover2.png);
   background-size: cover;
   background-position: top;
   position: relative; }
@@ -743,6 +743,12 @@ body {
     left: 4rem; }
   .header__logo {
     height: 13.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .header__logo {
+        height: 8.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .header__logo {
+        height: 5rem; } }
   .header__text-box {
     position: absolute;
     top: 40%;
@@ -929,7 +935,7 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(251, 100, 100, 0.4), rgba(84, 0, 0, 0.5)), url(../../img/Drums_in_red_small.jpeg);
+  background-image: linear-gradient(to right bottom, rgba(251, 100, 100, 0.4), rgba(84, 0, 0, 0.5)), url(../img/Drums_in_red_small.jpeg);
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem; }
@@ -940,7 +946,7 @@ body {
       padding: 10rem 0; } }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5rem), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5rem), only screen and (min-width: 112.5rem) {
     .section-features {
-      background-image: linear-gradient(to right bottom, rgba(251, 100, 100, 0.4), rgba(84, 0, 0, 0.5)), url(../../img/Drums_in_red.jpg); } }
+      background-image: linear-gradient(to right bottom, rgba(251, 100, 100, 0.4), rgba(84, 0, 0, 0.5)), url(../img/Drums_in_red.jpg); } }
 
 .section-tours {
   background-color: #f7f7f7;
@@ -965,20 +971,20 @@ body {
       padding: 10rem 0; } }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(240, 255, 255, 0.9) 0%, rgba(240, 255, 255, 0.9) 50%, transparent 50%), url(../../img/Event_small.jpeg);
+  background-image: linear-gradient(105deg, rgba(240, 255, 255, 0.9) 0%, rgba(240, 255, 255, 0.9) 50%, transparent 50%), url(../img/Event_small.jpeg);
   background-position-y: center;
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5 4rem rgba(0, 0, 0, 0.2); }
   @media only screen and (max-width: 75em) {
     .book {
-      background-image: linear-gradient(105deg, rgba(240, 255, 255, 0.9) 0%, rgba(240, 255, 255, 0.9) 65%, transparent 65%), url(../../img/Event.jpg); } }
+      background-image: linear-gradient(105deg, rgba(240, 255, 255, 0.9) 0%, rgba(240, 255, 255, 0.9) 65%, transparent 65%), url(../img/Event.jpg); } }
   @media only screen and (max-width: 75em) and (min-resolution: 192dpi) and (min-width: 37.5rem), only screen and (max-width: 75em) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5rem), only screen and (max-width: 75em) and (min-width: 112.5rem) {
     .book {
-      background-image: linear-gradient(105deg, rgba(240, 255, 255, 0.9) 0%, rgba(240, 255, 255, 0.9) 50%, transparent 50%), url(../../img/Event.jpg); } }
+      background-image: linear-gradient(105deg, rgba(240, 255, 255, 0.9) 0%, rgba(240, 255, 255, 0.9) 50%, transparent 50%), url(../img/Event.jpg); } }
   @media only screen and (max-width: 75em) {
     .book {
-      background-image: linear-gradient(to right, rgba(240, 255, 255, 0.9) 0%, rgba(240, 255, 255, 0.9) 100%), url(../../img/Event.jpg); } }
+      background-image: linear-gradient(to right, rgba(240, 255, 255, 0.9) 0%, rgba(240, 255, 255, 0.9) 100%), url(../img/Event.jpg); } }
   .book__form {
     width: 50%;
     padding: 6rem; }

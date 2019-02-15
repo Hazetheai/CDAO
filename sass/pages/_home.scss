@@ -15,7 +15,7 @@
       rgba($color-primary-light, 0.4),
       rgba($color-primary-dark, 0.5)
     ),
-    url(../../img/Drums_in_red_small.jpeg);
+    url(../img/Drums_in_red_small.jpeg);
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem;
@@ -36,7 +36,7 @@
         rgba($color-primary-light, 0.4),
         rgba($color-primary-dark, 0.5)
       ),
-      url(../../img/Drums_in_red.jpg);
+      url(../img/Drums_in_red.jpg);
   }
 }
 
@@ -78,7 +78,7 @@
       rgba($color-white, 0.9) 50%,
       transparent 50%
     ),
-    url(../../img/Event_small.jpeg);
+    url(../img/Event_small.jpeg);
   background-position-y: center;
   background-size: cover;
   border-radius: 3px;
@@ -91,7 +91,7 @@
         rgba($color-white, 0.9) 65%,
         transparent 65%
       ),
-      url(../../img/Event.jpg);
+      url(../img/Event.jpg);
 
     @media only screen and (min-resolution: 192dpi) and (min-width: 37.5rem),
       (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5rem),
@@ -102,7 +102,7 @@
           rgba($color-white, 0.9) 50%,
           transparent 50%
         ),
-        url(../../img/Event.jpg);
+        url(../img/Event.jpg);
     }
   }
 
@@ -112,7 +112,7 @@
         rgba($color-white, 0.9) 0%,
         rgba($color-white, 0.9) 100%
       ),
-      url(../../img/Event.jpg);
+      url(../img/Event.jpg);
   }
 
   &__form {
