@@ -97,4 +97,37 @@
     -webkit-hyphens: auto;
     hyphens: auto;
   }
+
+  @include respond(tab-port) {
+    &__content {
+      width: 75%;
+      display: block;
+      overflow: scroll;
+    }
+
+    &__left {
+      margin-top: 1rem;
+      width: 100%;
+      display: block;
+    }
+
+    &__right {
+      width: 100%;
+      display: block;
+      padding: 1rem 2rem;
+    }
+
+    &__img {
+      display: inline-block;
+      width: 48%;
+    }
+
+    &__text {
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+
+      -moz-column-count: 1;
+      column-count: 1;
+    }
+  }
 }
