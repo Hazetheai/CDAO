@@ -455,6 +455,22 @@
       </div>
     </footer>
 
+    <script>
+      //if url contains #popup --> remove popup
+      const pop = document.querySelector(".popup");
+
+      function rmPop(e) {
+        const popCont = document.querySelector(".popup__content");
+        let uurl = window.location.href;
+        if (uurl.indexOf("#popup") > -1 && !popCont.contains(e.target)) {
+          window.location.href = "http://127.0.0.1:5500/#";
+        }
+      }
+
+      pop.addEventListener("click", rmPop);
+      pop.addEventListener("touchmove", rmPop);
+    </script>
+
     <!-- <div class="popup" id="popup">
       <div class="popup__content">
         <div class="popup__left">
