@@ -568,7 +568,7 @@
         const popCont = document.querySelector(".popup__content");
         let uurl = window.location.href;
         if (uurl.indexOf("#popup") > -1 && !popCont.contains(e.target)) {
-          window.location.href = "http://127.0.0.1:5500/#";
+          window.location.href = uurl.toString().replace(/popup/gi, "");
         }
       }
 
