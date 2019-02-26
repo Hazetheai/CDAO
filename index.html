@@ -30,7 +30,7 @@
 
       <div class="navigation__background">&nbsp;</div>
 
-      <nav class="navigation__nav">
+      <nav class="navigation__nav hidden">
         <ul class="navigation__list">
           <li class="navigation__item">
             <a href="#" class="navigation__link"><span>01 </span> Home</a>
@@ -374,6 +374,7 @@
                     placeholder="Full Name"
                     required
                     id="name"
+                    oninput="btnColor()"
                   />
                   <label for="name" class="form__label">Full Name</label>
                 </div>
@@ -384,6 +385,7 @@
                     placeholder="Email Address"
                     required
                     id="email"
+                    oninput="btnColor()"
                   />
                   <label for="email" class="form__label">Email Address</label>
                 </div>
@@ -404,7 +406,9 @@
                                     </div> 
                                 </div> -->
                 <div class="form__group">
-                  <button class="btn btn--green">Next Step &rarr;</button>
+                  <button class="btn btn--green disabled" id="form-btn">
+                    Next Step &rarr;
+                  </button>
                 </div>
               </form>
             </div>
@@ -560,33 +564,6 @@
 
         -->
 
-    <script>
-      // if url contains #popup --> remove popup
-      const pop = document.querySelector(".popup");
-
-      function rmPop(e) {
-        const popCont = document.querySelector(".popup__content");
-        let uurl = window.location.href;
-        if (uurl.indexOf("#popup") > -1 && !popCont.contains(e.target)) {
-          window.location.href = uurl.toString().replace(/popup/gi, "");
-        }
-      }
-
-      pop.addEventListener("click", rmPop);
-      pop.addEventListener("touchmove", rmPop);
-
-      //Close Menu on click
-
-      const menu = document.querySelector("#navi-toggle");
-      const navItem = document.querySelectorAll(".navigation__link");
-
-      function handleMenu() {
-        if (menu.checked == true) {
-          menu.checked = false;
-        }
-      }
-
-      navItem.forEach(el => el.addEventListener("click", handleMenu));
-    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -172,7 +172,7 @@ body {
     padding: 1.5rem 4rem;
     display: inline-block;
     border-radius: 10rem;
-    transition: all .2s;
+    transition: all 0.2s;
     position: relative;
     font-size: 1.6rem; }
   .btn:hover {
@@ -204,9 +204,9 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
-    transition: all .4s; }
+    transition: all 0.4s; }
   .btn--animated {
-    animation: moveInBottom .5s ease-out .75s;
+    animation: moveInBottom 0.5s ease-out 0.75s;
     animation-fill-mode: backwards; }
 
 .btn-text:link, .btn-text:visited {
@@ -216,7 +216,7 @@ body {
   text-decoration: none;
   border-bottom: 1px solid #861b1b;
   padding: 3px;
-  transition: all .2s; }
+  transition: all 0.2s; }
 
 .btn-text:hover {
   background-color: #861b1b;
@@ -227,6 +227,10 @@ body {
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0px); }
+
+.disabled {
+  background-color: #777;
+  box-shadow: none; }
 
 .composition {
   position: relative; }
@@ -951,6 +955,9 @@ body {
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
   top: 0;
   transform: rotate(-225deg); }
+
+.hidden {
+  display: none; }
 
 .section-about {
   background-color: #f7f7f7;
