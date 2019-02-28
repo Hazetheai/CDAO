@@ -8,7 +8,9 @@ const nextBtn = document.querySelector("#form-btn");
 const btnColor = () => {
   if (name.value | (email.value !== "")) {
     nextBtn.classList.remove("disabled");
+    nextBtn.disabled = false;
   } else nextBtn.classList.add("disabled");
+  nextBtn.disabled = true;
 };
 
 name.addEventListener("focus", btnColor);
