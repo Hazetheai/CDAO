@@ -27,20 +27,39 @@ function rmPop(e) {
   }
 }
 
-// Close Menu
 pop.addEventListener("click", rmPop);
 pop.addEventListener("touchmove", rmPop);
 
+// Close Menu
 const menu = document.querySelector("#navi-toggle");
 const navItem = document.querySelectorAll(".navigation__link");
 const menuList = document.querySelector(".navigation__nav");
 
 function handleMenu() {
-  if (menu.checked == true) {
+  if (menu.checked == false) {
     console.log("should add class");
-    menu.checked = false;
+    menuList.classList.add("hidden");
+  } else if (menu.checked == true) {
+    menuList.classList.remove("hidden");
   }
 }
 
+function handleMenu() {
+  if (menu.checked == true) {
+    console.log("should remove class");
+    menuList.classList.remove("hidden");
+  } else {
+    console.log("should add class");
+    menuList.classList.add("hidden");
+  }
+}
+
+menu.addEventListener("click", handleMenu);
+navItem.forEach(el =>
+  el.addEventListener("click", () => (menu.checked = false))
+);
 navItem.forEach(el => el.addEventListener("click", handleMenu));
-menu.addEventListener("click", () => menuList.classList.toggle("hidden"));
+
+// menuList.addEventListener("click", handleMenu);
+
+// menu.addEventListener("click", () => menuList.classList.toggle("hidden"));

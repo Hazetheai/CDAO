@@ -1,0 +1,34 @@
+.gallery {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background-color: $color-grey-dark;
+  flex-wrap: wrap;
+  height: 95rem;
+  width: 90vw;
+  &:hover {
+    img {
+      opacity: 0.38;
+    }
+  }
+
+  &__item {
+    position: relative;
+    width: 33.333333%;
+    max-width: 29vw;
+    max-height: 29vh;
+    padding: 0.5rem;
+
+    &:hover {
+      img {
+        opacity: 1;
+      }
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+}

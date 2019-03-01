@@ -288,6 +288,9 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5em 4rem rgba(0, 0, 0, 0.15);
   transition: transform 0.3s; }
+  .feature-box__link {
+    text-decoration: none;
+    color: inherit; }
   @media only screen and (max-width: 56.25em) {
     .feature-box {
       padding: 2rem; } }
@@ -753,6 +756,29 @@ body {
       -moz-column-count: 1;
       column-count: 1; } }
 
+.gallery {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background-color: #777;
+  flex-wrap: wrap;
+  height: 95rem;
+  width: 90vw; }
+  .gallery:hover img {
+    opacity: 0.38; }
+  .gallery__item {
+    position: relative;
+    width: 33.333333%;
+    max-width: 29vw;
+    max-height: 29vh;
+    padding: 0.5rem; }
+    .gallery__item:hover img {
+      opacity: 1; }
+    .gallery__item img {
+      width: 100%;
+      display: block; }
+
 .header {
   height: 85vh;
   background-image: linear-gradient(to right bottom, rgba(251, 100, 100, 0.4), rgba(84, 0, 0, 0.5)), url(../img/CDAOCover2.png);
@@ -1028,3 +1054,9 @@ body {
     @media only screen and (max-width: 56.25em) {
       .book__form {
         width: 100%; } }
+
+.section-gallery {
+  background-color: #f7f7f7;
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center; }
