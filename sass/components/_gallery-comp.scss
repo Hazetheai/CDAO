@@ -1,38 +1,20 @@
-.gallery {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  justify-items: center;
-  // background-color: $color-grey-dark;
-  flex-wrap: wrap;
-  height: auto;
-  width: 90vw;
-  &:hover {
-    img {
-      opacity: 0.38;
-    }
+.gallery__column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0.4rem;
+
+  img {
+    margin-top: 0.8rem;
+    vertical-align: middle;
   }
 
-  &__item {
-    position: relative;
-    width: 33.333333%;
-    max-width: 29vw;
-    padding: 0.5rem;
+  @include respond(tab-port) {
+    flex: 50%;
+    max-width: 50%;
+  }
 
-    @include respond(tab-port) {
-      width: inherit;
-      max-width: inherit;
-    }
-
-    &:hover {
-      img {
-        opacity: 1;
-      }
-    }
-
-    img {
-      width: 100%;
-      display: block;
-    }
+  @include respond(phone) {
+    flex: 100%;
+    max-width: 100%;
   }
 }
