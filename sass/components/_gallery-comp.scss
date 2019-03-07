@@ -1,11 +1,11 @@
 .gallery {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   justify-items: center;
-  background-color: $color-grey-dark;
+  // background-color: $color-grey-dark;
   flex-wrap: wrap;
-  height: 95rem;
+  height: auto;
   width: 90vw;
   &:hover {
     img {
@@ -17,8 +17,12 @@
     position: relative;
     width: 33.333333%;
     max-width: 29vw;
-    max-height: 29vh;
     padding: 0.5rem;
+
+    @include respond(tab-port) {
+      width: inherit;
+      max-width: inherit;
+    }
 
     &:hover {
       img {

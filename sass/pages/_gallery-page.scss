@@ -4,3 +4,13 @@
   display: flex;
   justify-content: center;
 }
+
+.header {
+  &--gallery {
+    height: 30vh;
+  }
+
+  @include respond(tab-port) {
+    height: 15vh;
+  }
+}

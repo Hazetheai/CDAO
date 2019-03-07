@@ -759,11 +759,10 @@ body {
 .gallery {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   justify-items: center;
-  background-color: #777;
   flex-wrap: wrap;
-  height: 95rem;
+  height: auto;
   width: 90vw; }
   .gallery:hover img {
     opacity: 0.38; }
@@ -771,8 +770,11 @@ body {
     position: relative;
     width: 33.333333%;
     max-width: 29vw;
-    max-height: 29vh;
     padding: 0.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .gallery__item {
+        width: inherit;
+        max-width: inherit; } }
     .gallery__item:hover img {
       opacity: 1; }
     .gallery__item img {
@@ -1060,3 +1062,10 @@ body {
   padding: 5rem 0;
   display: flex;
   justify-content: center; }
+
+.header--gallery {
+  height: 30vh; }
+
+@media only screen and (max-width: 56.25em) {
+  .header {
+    height: 15vh; } }
