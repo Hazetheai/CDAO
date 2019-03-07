@@ -762,7 +762,8 @@ body {
   padding: 0.4rem; }
   .gallery__column img {
     margin-top: 0.8rem;
-    vertical-align: middle; }
+    vertical-align: middle;
+    width: 100%; }
   @media only screen and (max-width: 56.25em) {
     .gallery__column {
       flex: 50%;
