@@ -16,41 +16,25 @@ const btnColor = () => {
 name.addEventListener("focus", btnColor);
 email.addEventListener("focus", btnColor);
 
-//if url contains #popup --> remove popup
-const pop = document.querySelector(".popup");
-
-function rmPop(e) {
-  const popCont = document.querySelector(".popup__content");
-  let uurl = window.location.href;
-  if (uurl.indexOf("#popup") > -1 && !popCont.contains(e.target)) {
-    window.location.href = uurl.toString().replace(/popup/gi, "");
-  }
-}
-
-pop.addEventListener("click", rmPop);
-pop.addEventListener("touchmove", rmPop);
-
 // Close Menu
 const menu = document.querySelector("#navi-toggle");
 const navItem = document.querySelectorAll(".navigation__link");
 const menuList = document.querySelector(".navigation__nav");
 
+// Hides css hidden links.
 function handleMenu() {
-  if (menu.checked == false) {
-    console.log("should add class");
-    menuList.classList.add("hidden");
-  } else if (menu.checked == true) {
+  if (menu.checked == true) {
     menuList.classList.remove("hidden");
+  } else {
+    menuList.classList.add("hidden");
   }
 }
 
-function handleMenu() {
+//close menu if open and clicked outside <li>
+function close() {
   if (menu.checked == true) {
-    console.log("should remove class");
-    menuList.classList.remove("hidden");
-  } else {
-    console.log("should add class");
-    menuList.classList.add("hidden");
+    menu.checked = false;
+    handleMenu();
   }
 }
 
@@ -59,7 +43,4 @@ navItem.forEach(el =>
   el.addEventListener("click", () => (menu.checked = false))
 );
 navItem.forEach(el => el.addEventListener("click", handleMenu));
-
-// menuList.addEventListener("click", handleMenu);
-
-// menu.addEventListener("click", () => menuList.classList.toggle("hidden"));
+menuList.addEventListener("click", close);

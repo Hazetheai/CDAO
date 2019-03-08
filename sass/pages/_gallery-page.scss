@@ -1,9 +1,7 @@
 .section-gallery {
   background-color: $color-grey-light-1;
-  padding: 0.4rem;
   display: flex;
-  flex-wrap: wrap;
-  // justify-content: center;
+  justify-content: center;
 }
 
 .header {
