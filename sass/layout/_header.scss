@@ -48,6 +48,14 @@
     @include respond(phone) {
       height: 5rem;
     }
+
+    &--gallery {
+      height: 30vh;
+
+      @include respond(tab-port) {
+        height: 15vh;
+      }
+    }
   }
 
   &__text-box {

@@ -765,7 +765,6 @@ body {
     height: 25rem;
     min-width: 15rem;
     margin: 0rem 0.8rem 0.8rem 0;
-    /* Some gutter */
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 1.5em 4rem rgba(0, 0, 0, 0.15); }
@@ -812,6 +811,11 @@ body {
     @media only screen and (max-width: 37.5em) {
       .header__logo {
         height: 5rem; } }
+    .header__logo--gallery {
+      height: 30vh; }
+      @media only screen and (max-width: 56.25em) {
+        .header__logo--gallery {
+          height: 15vh; } }
   .header__text-box {
     position: absolute;
     top: 40%;
