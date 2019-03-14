@@ -6,6 +6,10 @@
   @include respond(tab-port) {
     padding: 20rem 0;
   }
+
+  &--blog {
+    padding: 0;
+  }
 }
 
 .section-features {
